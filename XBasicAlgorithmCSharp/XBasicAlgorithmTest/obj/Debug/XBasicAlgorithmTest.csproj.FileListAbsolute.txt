@@ -1,0 +1,8 @@
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmTest\bin\Debug\XBasicAlgorithmTest.exe.config
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmTest\bin\Debug\XBasicAlgorithmTest.exe
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmTest\bin\Debug\XBasicAlgorithmTest.pdb
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmTest\bin\Debug\XBasicAlgorithmCSharp.dll
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmTest\bin\Debug\XBasicAlgorithmCSharp.pdb
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmTest\obj\Debug\XBasicAlgorithmTest.csprojResolveAssemblyReference.cache
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmTest\obj\Debug\XBasicAlgorithmTest.exe
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmTest\obj\Debug\XBasicAlgorithmTest.pdb

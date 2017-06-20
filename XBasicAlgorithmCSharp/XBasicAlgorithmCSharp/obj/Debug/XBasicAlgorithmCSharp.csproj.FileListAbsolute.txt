@@ -1,0 +1,5 @@
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmCSharp\bin\Debug\XBasicAlgorithmCSharp.dll
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmCSharp\bin\Debug\XBasicAlgorithmCSharp.pdb
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmCSharp\obj\Debug\XBasicAlgorithmCSharp.csprojResolveAssemblyReference.cache
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmCSharp\obj\Debug\XBasicAlgorithmCSharp.dll
+D:\Projects\BasicAlgorithm\XBasicAlgorithmCSharp\XBasicAlgorithmCSharp\obj\Debug\XBasicAlgorithmCSharp.pdb
