@@ -11,6 +11,12 @@ namespace XBasicAlgorithmTest
     {
         static void Main(string[] args)
         {
+            while (true)
+            {
+                int i = int.Parse(Console.ReadLine());
+                int i2 = int.Parse(Console.ReadLine());
+                Console.WriteLine(XCommonHelper.Max(i, i2));
+            }
         }
     }
 }

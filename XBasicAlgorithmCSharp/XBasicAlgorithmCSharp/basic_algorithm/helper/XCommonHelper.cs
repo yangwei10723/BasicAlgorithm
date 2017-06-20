@@ -10,7 +10,7 @@ namespace XBasicAlgorithmCSharp
     {
         public static bool IsPowOfTwo(int value)
         {
-            return (value & (value - 1)) == 0;
+            return value != 0 && ((value & (value - 1)) == 0);
         }
 
         public static int FindCeilPowOfTwo(int value)
@@ -24,5 +24,20 @@ namespace XBasicAlgorithmCSharp
             value++;
             return value;
         }
+
+        public static int Min(int x, int y)
+        {
+            //return y ^ ((x ^ y) & -(x < y));
+            int charBit = 4;
+            return y + ((x - y) & ((x - y) >> (sizeof(int) * charBit - 1)));    // only works when int.minvalue < x - y < int.maxvalue
+        }
+
+        public static int Max(int x, int y)
+        {
+            //return x ^ ((x ^ y) & -(x < y));
+            int charBit = 4;
+            return x - ((x - y) & ((x - y) >> (sizeof(int) * charBit - 1)));    // only works when int.minvalue < x - y < int.maxvalue
+        }
+
     }
 }
