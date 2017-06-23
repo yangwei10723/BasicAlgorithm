@@ -39,5 +39,30 @@ namespace XBasicAlgorithmCSharp
             return x - ((x - y) & ((x - y) >> (sizeof(int) * charBit - 1)));    // only works when int.minvalue < x - y < int.maxvalue
         }
 
+
+        public static int BinarySearch(List<int> list, int value)
+        {
+            int left = 0;
+            int right = list.Count - 1;
+
+            while (left <= right && left < list.Count && right < list.Count)
+            {
+                int mid = (left + right) >> 1;
+                if (value > list[mid])
+                {
+                    left = mid + 1;
+                }
+                else if (value < list[mid])
+                {
+                    right = mid - 1;
+                }
+                else
+                {
+                    return mid;
+                }
+            }
+
+            return -1;
+        }
     }
 }

@@ -1,0 +1,6 @@
+XBasicAlgorithmCSharp/XBasicAlgorithmTest/bin/
+XBasicAlgorithmCSharp/XBasicAlgorithmTest/obj/
+XBasicAlgorithmCSharp/XBasicAlgorithmCSharp/obj/
+XBasicAlgorithmCSharp/XBasicAlgorithmCSharp/bin/
+*.csproj
+*.suo
