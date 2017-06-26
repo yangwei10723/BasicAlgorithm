@@ -25,13 +25,10 @@ public class XBinaryTree
     public void PreorderTraversal(XBinaryTreeNode node)
     {
         // root -> left -> right
-        Console.WriteLine(node.index + "\t" + node.value);
-        if (node.leftNode != null)
+        if (node != null)
         {
+            Console.WriteLine(node.index + "\t" + node.value);
             PreorderTraversal(node.leftNode);
-        }
-        if (node.rightNode != null)
-        {
             PreorderTraversal(node.rightNode);
         }
     }
@@ -41,15 +38,9 @@ public class XBinaryTree
         // left -> root -> right
         if (node != null)
         {
-            if (node.leftNode != null)
-            {
-                PreorderTraversal(node.leftNode);
-            }
+            PreorderTraversal(node.leftNode);
             Console.WriteLine(node.index + "\t" + node.value);
-            if (node.rightNode != null)
-            {
-                PreorderTraversal(node.rightNode);
-            }
+            PreorderTraversal(node.rightNode);
         }
     }
 
@@ -58,14 +49,8 @@ public class XBinaryTree
         // left -> right -> root
         if (node != null)
         {
-            if (node.leftNode != null)
-            {
-                PreorderTraversal(node.leftNode);
-            }
-            if (node.rightNode != null)
-            {
-                PreorderTraversal(node.rightNode);
-            }
+            PreorderTraversal(node.leftNode);
+            PreorderTraversal(node.rightNode);
             Console.WriteLine(node.index + "\t" + node.value);
         }
     }
