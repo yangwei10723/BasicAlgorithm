@@ -1,0 +1,4 @@
+*.suo
+*.csproj
+XBasicAlgorithmCSharp/XBasicAlgorithmCSharp/obj/
+XBasicAlgorithmCSharp/XBasicAlgorithmTest/obj/
