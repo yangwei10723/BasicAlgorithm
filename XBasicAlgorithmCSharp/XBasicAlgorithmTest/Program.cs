@@ -11,11 +11,23 @@ namespace XBasicAlgorithmTest
     {
         static void Main(string[] args)
         {
+            //while (true)
+            //{
+            //    int i = int.Parse(Console.ReadLine());
+            //    int i2 = int.Parse(Console.ReadLine());
+            //    Console.WriteLine(XCommonHelper.Max(i, i2));
+            //}
+
+            List<int> list = new List<int>();
+            for (int i = 0; i < 10000000; i++)
+            {
+                list.Add(i);
+            }
+
             while (true)
             {
-                int i = int.Parse(Console.ReadLine());
-                int i2 = int.Parse(Console.ReadLine());
-                Console.WriteLine(XCommonHelper.Max(i, i2));
+                int value = int.Parse(Console.ReadLine());
+                Console.WriteLine(XCommonHelper.BinarySearch(list, value));
             }
         }
     }
