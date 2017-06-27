@@ -33,6 +33,26 @@ public class XBinaryTree
         }
     }
 
+    public void PreOrderTraversalStack(XBinaryTreeNode node)
+    {
+        Stack<XBinaryTreeNode> stack = new Stack<XBinaryTreeNode>();
+        while (node != null || stack.Count > 0)
+        {
+            while (node != null)
+            {
+                stack.Push(node);
+                Console.WriteLine(node.index + "\t" + node.value);
+                node = node.leftNode;
+            }
+
+            if (stack.Count > 0)
+            {
+                XBinaryTreeNode theNode = stack.Pop();
+                node = theNode.rightNode;
+            }
+        }
+    }
+
     public void InorderTraversal(XBinaryTreeNode node)
     {
         // left -> root -> right
@@ -55,9 +75,47 @@ public class XBinaryTree
         }
     }
 
+    public void PostOrderTraversalStack(XBinaryTreeNode node)
+    {
+        Stack<XBinaryTreeNode> stack = new Stack<XBinaryTreeNode>();
+        while (node != null || stack.Count > 0)
+        {
+            while (node != null)
+            {
+                stack.Push(node);
+                node = node.leftNode;
+            }
+
+            if (stack.Count > 0)
+            {
+                XBinaryTreeNode theNode = stack.Pop();
+                Console.WriteLine(theNode.index + "\t" + theNode.value);
+                node = theNode.rightNode;
+            }
+        }
+    }
+
     public void LevelOrderTraversal(XBinaryTreeNode node)
     {
-
+        // 二叉树二维结构线性化
+        if (node != null)
+        {
+            Queue<XBinaryTreeNode> queue = new Queue<XBinaryTreeNode>();
+            queue.Enqueue(node);
+            while (queue.Count > 0)
+            {
+                XBinaryTreeNode theNode = queue.Dequeue();
+                Console.WriteLine(theNode);
+                if (theNode.leftNode != null)
+                {
+                    queue.Enqueue(theNode.leftNode);
+                }
+                if (theNode.rightNode != null)
+                {
+                    queue.Enqueue(theNode.rightNode);
+                }
+            }
+        }
     }
 }
 
